@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+       <link rel = "stylesheet" href = "index.CSS"/>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE = edge">
+        <meta name ="viewport" content = "width = device-width, initial-scale=1.0">
+        <title>Form
+             </title>
+    </head>
+    <body background="./form.jpg">
+        <div>
+        <form>
+            <h4>
+                Personal information
+            </h4>
+            <input type = "text"  name = "firstname" placeholder = "First Name" autocomplete="off" required/>
+            <input type = "text" name = "lastname" placeholder="Last Name" autocomplete="off" required/>
+        </br>
+            <input type = "email" name = "email" placeholder="Email id" autocomplete="off" required/>
+            <input type = "tel" name = "phone" placeholder="Phone Number" autocomplete="off" 
+            required pattern= "[0-9]{4}-[0-9]{3}-[0-9]{3}" title="please enter in the format 1111-111-111"/>
+            <input type = "date" name = "date of birth"/>
+            <select  name="gender">
+                <option select disabled>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <textarea name = "address" placeholder="Address"></textarea>
+        </br>
+        <h4>
+            Education information</h4>
+            <select name = "degree">
+                <option select disabled>Select degree</option>
+                <optgroup label="Bachelors">
+                <option>B.E.</option>
+                <option>B.sc</option>
+                <option>B.Tech</option>
+                <option>B.A.</option>
+                </optgroup>
+                <optgroup label="Masters">
+                    <option>M.E.</option>
+                    <option>M.sc</option>
+                    <option>M.Tech</option>
+                    <option>M.A.</option>
+                </optgroup>
+            </select>
+            <input type ="text" name= "college name" placeholder="College name"/>
+            <input type = "text" name ="graduation year" placeholder="Year of graduation" min="2010" max="2022"/>
+            <input type="text" name ="percentage" placeholder="Percentage" min="35" max="100" step="0.1"/>
+        </br>
+        <h5>
+            Upload Resume
+        </h5>
+        <input type ="file"/>
+    </br>
+        <h4>
+            Course details
+        </h4>
+        <p>
+            Which level do you want to enroll?
+        </p>
+        <input type = "radio" name = "course type"/> <span> Fundamentals </span>
+        <input type="radio"  name="course type" /><span>Advanced</span>
+    </br>
+        <p> Which course do you want to enroll?</p>
+        <input type="checkbox"  name="course_name" /><span >Web</span>
+   
+        <input type="checkbox"  name="course_name" /><span >DSA</span>
+</br>
+</br>
+        <input type="submit" value="Apply for Admission" />
+        <input type="reset" />
+        
+        </form>
+    </div>
+    </body>
+    </html>
